@@ -1,0 +1,200 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/helion-add-in-ecosystem.webflow.css">
+
+
+	<style type="text/css">
+		.add-in-tile {
+			height: 380px;
+			width: 260px;
+			position:relative;
+		}
+
+
+		.menu {
+		    width: 100%;
+		    margin: 0;
+		    padding: 10px 0 0 0;
+		    position:absolute;
+		    bottom:0;
+		    left:0;
+		    list-style: none;  
+		    background: #e2e2e2;
+		}
+
+		.menu li {
+		    float: right;
+		    padding: 0;
+		    position: relative;
+		}
+
+		.menu a {}
+
+		.menu li:hover > a {
+		    color: #fafafa;
+		}
+
+		.menu ul li a img {width:24px;}
+
+		*html .menu li a:hover { /* IE6 */
+		    color: #fafafa;
+		}
+
+		.menu li:hover > ul {
+		    display: block;
+		}
+
+		/* Sub-menu */
+		.menu ul {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;    
+		    display: none;
+		    position: absolute;
+		    top: 25px;
+		    left: 0;
+		    z-index: 99999;    
+		    background-color: #fff;
+		}
+
+		.menu ul li {
+		    float: none;
+		    margin: 0;
+		    padding: 0;
+		    display: block;  
+		}
+
+		.menu ul li:last-child { 
+		    box-shadow: none;    
+		}
+
+		.menu ul a {    
+		    padding: 10px;
+		    height: auto;
+		    line-height: 1;
+		    display: block;
+		    white-space: nowrap;
+		    float: none;
+		    text-transform: none;
+		}
+
+		*html .menu ul a { /* IE6 */   
+		    height: 10px;
+		    width: 150px;
+		}
+
+		*:first-child+html #menu ul a { /* IE7 */    
+		    height: 10px;
+		    width: 150px;
+		}
+
+		.menu ul a:hover {
+		    background-color: #0186ba;
+		
+		}
+
+		.menu ul li:first-child a {
+		    border-radius: 5px 5px 0 0;
+		}
+
+		.menu ul li:first-child a:after {
+		    content: '';
+		    position: absolute;
+		    left: 30px;
+		    top: -8px;
+		    width: 0;
+		    height: 0;
+		    border-left: 5px solid transparent;
+		    border-right: 5px solid transparent;
+		    border-bottom: 8px solid #444;
+		}
+
+		.menu ul li:first-child a:hover:after {
+		    border-bottom-color: #04acec; 
+		}
+
+		.menu ul li:last-child a {
+		    border-radius: 0 0 5px 5px;
+		}
+
+		/* Clear floated elements */
+		.menu:after {
+		    visibility: hidden;
+		    display: block;
+		    font-size: 0;
+		    content: " ";
+		    clear: both;
+		    height: 0;
+		}
+
+		* html .menu             { zoom: 1; } /* IE6 */
+		*:first-child+html .menu { zoom: 1; } /* IE7 */
+
+
+	</style>
+</head>	
+<body>
+
+	<div class="add-in-tile">
+		<h3>IDOL OnDemand</h3>
+		<p>IDOL OnDemand, the Human Information API Platform, is a complete solution for bringing human understanding to the cloud.</p>
+		<img src="images/idol.png"/>
+		<h4>One Platform. Limitless Innovation.</h4>
+		<div class="add-in-tile-action-bar">
+			<div class="menu-dropdown">
+				<ul CLASS="menu">
+					<li><a href="#"><img src="images/dots.png"/></a>
+	            		<ul class="dropdown">
+	            			<li><a href="#"><img class="img" src="images/install.png"/>Install</a></li>
+	            			<li><a href="#"><img class="img" src="images/download.png"/>Download again</a></li>
+	            			<li><a href="#"><img class="img" src="images/manage.png"/>Manage</a></li>
+	            			<li><a href="#"><img class="img" src="images/remove.png"/>Remove</a></li>
+	            			<li><a href="#"><img class="img" src="images/remove.png"/>Disable</a></li>
+	            		</ul>
+	            	</li>
+	            </div>
+	        </div>
+	    </div>
+
+
+
+
+                         
+                     
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+
+	function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-5').removeClass('active');
+				});
+
+			});
+
+</script>
+
+</body>
+</html>
