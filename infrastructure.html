@@ -16,10 +16,10 @@
 </head>
 <body>
   <div class="menu slide-menu-left">
-      <button class="close-menu">&larr; Close</button>
+      <button class="close-menu">Close</button>
       <h4>Dashboards</h4>
       <nav>
-        <a href="#"><img src="images/overview.png" width="29"/> Overview</a>
+        <a href="dashboard.html"><img src="images/overview.png" width="29"/> Overview</a>
         <a href="#"><img src="images/quotas.png" width="29"/>Project Quotas</a>
         <a href="#"><img src="images/allocations.png" width="29"/>Allocations</a>
       </nav>
@@ -29,7 +29,7 @@
         <a href="#"><img src="images/instances.png" width="29"/> Instances</a>
         <a href="#"><img src="images/volumes.png" width="29"/> Volumes</a>
         <a href="#"><img src="images/images.png" width="29"/> Images</a>
-        <a href="#"><img src="images/security.png" width="29"/> Access & Security</a>
+        <a href="#"><img src="images/security.png" width="29"/> Access &amp; Security</a>
       </nav>
       <h4>Network</h4>
       <nav>
@@ -40,7 +40,7 @@
       </nav>
       <h4>Databases</h4>
       <nav>
-        <a href="#"><img src="images/databases.png" width="29"/> Databases</a>
+        <a href="databases.html"><img src="images/databases.png" width="29"/> Databases</a>
         <a href="#"><img src="images/backups.png" width="29"/> Backups</a>
       </nav>
       <h4>Orchestration</h4>
@@ -49,7 +49,7 @@
       </nav>
       <h4>Admin</h4>
       <nav>
-        <a href="#"><img src="images/updates.png" width="29"/> Updates & Extensions</a>
+        <a href="add-in.html"><img src="images/updates.png" width="29"/> Updates &amp; Extensions</a>
         <a href="#"><img src="images/users.png" width="29"/> Users</a>
       </nav>
   </div>
@@ -90,7 +90,7 @@
       </div>
       <div class="w-dropdown header-dropdown" data-delay="0">
         <div class="w-dropdown-toggle">
-          <div>SCD&nbsp;East Coast</div>
+          <div>SCD East Coast</div>
           <div class="w-icon-dropdown-toggle"></div>
         </div>
         <nav class="w-dropdown-list">
@@ -116,20 +116,21 @@
         <div class="w-col w-col-6 column-1">
           <p class="logged-in-text">You are logged into the Helion Developer Network as Omri Gazitt (log out)</p>
         </div>
-        <div class="w-col w-col-6 column-2"><img class="upload-image" src="images/install.png" width="54" alt="54fa08641dc0dc6563e0cf83_install.png">
+        <div class="w-col w-col-6 column-2">
+          <img class="upload-image" src="images/install.png" width="54">
           <div class="upload-teaser">Drag and Drop files here to upload or browse to upload</div>
         </div>
       </div>
       <div class="portfolio-tabs-container">
         <div class="w-tabs portfolio-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu">
-            <a class="w-tab-link w-inline-block tab" data-w-tab="Infrastructure">
+            <a class="w-tab-link w--current w-inline-block tab" data-w-tab="Infrastructure">
               <div>Infrastructure</div>
             </a>
             <a class="w-tab-link w-inline-block tab" data-w-tab="Platform Services">
               <div>Platform Services</div>
             </a>
-            <a class="w-tab-link w--current w-inline-block tab" data-w-tab="Add-In Services">
+            <a class="w-tab-link w-inline-block tab" href="add-in.html" data-w-tab="Add-In Services">
               <div>Add-In Services</div>
             </a>
             <a class="w-tab-link w-inline-block tab" data-w-tab="Applications">
@@ -172,7 +173,7 @@
                 </table>
               </div>
             </div>
-            <div class="w-tab-pane" data-w-tab="Platform Services">
+            <div class="w-tab-pane w--tab-active" data-w-tab="Platform Services">
               <div class="w-embed tab-table">
               <table cellspacing="0" summary="platform">
                   <tbody>
@@ -208,7 +209,7 @@
               </div>
 
             </div>
-            <div class="w-tab-pane w--tab-active" data-w-tab="Add-In Services">
+            <div class="w-tab-pane " data-w-tab="Add-In Services">
               <div class="w-embed tab-table">
                 <table cellspacing="0" summary="infrastructure">
                   <tbody>
@@ -221,8 +222,34 @@
                       <th>update status</th>
                       <th>actions</th>
                     </tr>
+                    <tr class="product-row" data-ix="display-none-on-load">
+                      <td><a href="#">Helion Vertica Database Service</a></td>
+                      <td>HP Helion</td>
+                      <td>1.2.0</td>
+                      <td>2.10 MB</td>
+                      <td><img src="images/disable.png" width="16"/>Inactive</td>
+                      <td><img src="images/3.png" width="16"/>Current</td>
+                      <td>
+                        <a href="#" data-ix="show-toggle-Tablemenus">
+                          <img src="images/dots.png">
+                        </a>
+                          <div class="toggleTablemenu" data-ix="display-none-on-load">
+                            <a class="w-inline-block action-link" href="#">
+                              <img src="images/activate.png" width="24"> Activate
+                            </a>
+                            <a class="w-inline-block action-link" href="#">
+                              <img src="images/manage.png" width="24">Manage
+                            </a>
+                            <a class="w-inline-block action-link" href="#">
+                              <img src="images/download.png" width="24">  Download update
+                            </a>
+                            <a class="w-inline-block action-link" href="#">
+                              <img src="images/remove.png" width="24">Remove
+                            </a>
+                      </td>
+                    </tr>
                     <tr>
-                      <td>IDOL On Demand</td>
+                      <td><a href="#">IDOL On Demand</a></td>
                       <td>HP Helion</td>
                       <td>1.5</td>
                       <td>3.5 GB</td>
@@ -231,7 +258,7 @@
                       <td>...</td>
                     </tr>
                     <tr>
-                      <td>Office365</td>
+                      <td><a href="#">Office365</a></td>
                       <td>Microsoft</td>
                       <td>15.0</td>
                       <td>22.5 GB</td>
@@ -257,102 +284,137 @@
     <div class="w-container tiles-container">
       <div class="w-clearfix tiles">
         <h2>Add more services and capabilities to your cloud</h2>
+        
         <div class="add-in-tile">
-          <h3 class="catalog-header">HP&nbsp;Vertica</h3>
-          <p class="catalog-text">HP Vertica Analytics Platform: No Limits, No Compromises. Built from the first line of code for Big Data Analytics.</p><img class="tile-block-image" src="images/vertica.png" alt="54ef7d9758f87f0b7036de98_vertica.png">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">HP Vertica Analytics Platform: No Limits, No Compromises. Built from the first line of code for Big Data Analytics.</p>
+          <img class="tile-block-image" src="images/11.png">
           <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png" data-ix="show-toggle-menus">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png" data-ix="show-toggle-menus">
             </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
+            
+          </div>
+
+          <div class="togglemenu" data-ix="display-none-on-load">
+              <a class="w-inline-block action-link" href="#">
+                <img class="action-icon" src="images/install.png" width="24"data-ix="show-product-row">
+                <div class="action-text" data-ix="show-product-row">Install</div>
+              </a>
+              <a class="w-inline-block action-link" href="#">
+                <img class="action-icon" src="images/manage.png" width="24" data-ix="show-product-row">
+                <div class="action-text" data-ix="show-product-row">Manage</div>
+              </a>
+              <a class="w-inline-block action-link" href="#">
+                <img class="action-icon" src="images/disable.png" width="24" data-ix="show-product-row">
+                <div class="action-text" data-ix="show-product-row">Disable</div>
+              </a>
+              <a class="w-inline-block action-link" href="#">
+                <img class="action-icon" src="images/download.png" width="28">
+                <div class="action-text">Download again</div>
+              </a>
+              <a class="w-inline-block action-link" href="#">
+                <img class="action-icon" src="images/remove.png" width="24" data-ix="show-product-row">
+                <div class="action-text" data-ix="show-product-row">Remove</div>
+              </a>
+          </div>
+
+
+
+        </div>
+        <div class="add-in-tile">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">Intelligentsia flannel trust fund, brunch irony Thundercats bicycle rights pork belly 3 wolf moon Kickstarter polaroid.</p>
+          <img class="tile-block-image" src="images/22.png">
+          <div class="tile-footer">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png" >
+            </a>
+            <!-- <div class="togglemenu" data-ix="display-none-on-load">
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
                 <div class="action-text">install</div>
               </a>
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
                 <div class="action-text">download again</div>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
+        
         <div class="add-in-tile">
-          <h3 class="catalog-header">Aria</h3>
-          <p class="catalog-text">Intelligentsia flannel trust fund, brunch irony Thundercats bicycle rights pork belly 3 wolf moon Kickstarter polaroid. Lo-fi semiotics plaid Bushwick&nbsp;</p><img class="tile-block-image" src="images/aria.png" alt="54ef7da0669d98e13afcfd4d_aria.png">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">Food truck bicycle rights wolf tote bag, vegan cardigan occupy Odd Future photo booth High Life Vice tousled meggings.</p>
+          <img class="tile-block-image" src="images/cube.png">
           <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png" >
             </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
+            <!-- <div class="togglemenu" data-ix="display-none-on-load">
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
                 <div class="action-text">install</div>
               </a>
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
                 <div class="action-text">download again</div>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="add-in-tile">
-          <h3 class="catalog-header">Hipstr</h3>
-          <p class="catalog-text">Some cloudy hipster continuous node paradigm shifting collaboration toolset</p><img class="tile-block-image" src="images/hipstr.png" alt="54ef7ef55f90810970ad06b6_hipstr.png">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">High Life try-hard health goth. Bushwick viral cronut, dreamcatcher vegan Vice tousled meggings paleo.</p>
+          <img class="tile-block-image" src="images/11.png">
+          <div class="tile-footer">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png" >
+            </a>
+            <!-- <div class="togglemenu" data-ix="display-none-on-load">
+              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
+                <div class="action-text">install</div>
+              </a>
+              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
+                <div class="action-text">download again</div>
+              </a>
+            </div> -->
+          </div>
+
+        </div>
+
+        <div class="add-in-tile">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">Some cloudy hipster continuous node paradigm shifting collaboration toolset</p>
+          <img class="tile-block-image" src="images/22.png">
           <p class="add-in-tagline">add-in tagline</p>
           <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png" >
             </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
+            <!-- <div class="togglemenu" data-ix="display-none-on-load">
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
                 <div class="action-text">install</div>
               </a>
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
                 <div class="action-text">download again</div>
-              </a>
-            </div>
+              </a> 
+            </div>-->
           </div>
         </div>
         <div class="add-in-tile">
-          <h3 class="catalog-header">Hipstr</h3>
-          <p class="catalog-text">Some cloudy hipster continuous node paradigm shifting collaboration toolset</p><img class="tile-block-image" src="images/hipstr.png" alt="54ef7ef55f90810970ad06b6_hipstr.png">
+          <h3 class="catalog-header">Lorem ipsum dolor</h3>
+          <p class="catalog-text">Some cloudy hipster continuous node paradigm shifting collaboration toolset</p>
+          <img class="tile-block-image" src="images/cube.png">
           <p class="add-in-tagline">add-in tagline</p>
           <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png" data-ix="toggle-action-menu">
+            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+              <img class="action-dots" src="images/dots.png"  data-ix="toggle-action-menu">
             </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
+            <!-- <div class="togglemenu" data-ix="display-none-on-load">
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
                 <div class="action-text">install</div>
               </a>
               <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
                 <div class="action-text">download again</div>
               </a>
-            </div>
-          </div>
-        </div>
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Salesforce</h3>
-          <p class="catalog-text">Food truck bicycle rights wolf tote bag, vegan cardigan occupy Odd Future photo booth High Life&nbsp;Vice tousled meggings.</p><img class="tile-block-image" src="images/salesforce.png" alt="54ef7dbf40db16e23ac5ee1e_salesforce.png">
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
-                <div class="action-text">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Tableau</h3>
-          <p class="catalog-text">High Life try-hard health goth. Bushwick viral cronut, dreamcatcher vegan Vice tousled meggings paleo.</p><img class="tile-block-image" src="images/6.png" alt="54ef7dae669d98e13afcfd50_6.png">
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png" alt="54fce12a21c2e6761cc518c1_dots.png">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" alt="54fcf0725780b4480e81a0a8_install.png">
-                <div class="action-text">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" alt="54fcf1181a1739771c15a97f_download.png">
-                <div class="action-text">download again</div>
-              </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -383,7 +445,7 @@
       </div>
       <div class="w-col w-col-3">
         <ul class="w-list-unstyled footer-list">
-          <li><a class="footer-link" href="#">About HP&nbsp;Helion</a>
+          <li><a class="footer-link" href="#">About HP Helion</a>
           </li>
           <li><a class="footer-link" href="#">Contact US</a>
           </li>
@@ -398,7 +460,7 @@
         </ul>
       </div>
       <div class="w-col w-col-3">
-        <p class="footer-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p>
+        <p class="footer-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
       </div>
       <div class="w-col w-col-3">
         <p class="footer-list">@hphelioncloud
@@ -406,7 +468,11 @@
           <br>Hear #HPHelion Harry Sutton at #OpenStack Meetup in Boston on Aug 14 at 7pm
           <br><a class="footer-link" href="#">http://hp.io/6012lbtm</a>
         </p>
-        <div class="footer-social"><img class="footer-social-icon" src="images/twitter.png" width="32" alt="54fcc0cd763bfc470ec7fe2e_twitter.png"><img class="footer-social-icon" src="images/facebook.png" width="32" alt="54fcc0e3763bfc470ec7fe30_facebook.png"><img class="footer-social-icon" src="images/linkedin.png" width="32" alt="54fcc0f6763bfc470ec7fe32_linkedin.png"><img class="footer-social-icon" src="images/youtube.png" width="32" alt="54fcc107763bfc470ec7fe34_youtube.png">
+        <div class="footer-social">
+          <img class="footer-social-icon" src="images/twitter.png" width="32">
+          <img class="footer-social-icon" src="images/facebook.png" width="32">
+          <img class="footer-social-icon" src="images/linkedin.png" width="32">
+          <img class="footer-social-icon" src="images/youtube.png" width="32">
         </div>
       </div>
     </div>

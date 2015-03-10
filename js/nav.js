@@ -8,6 +8,7 @@
 	var body = document.body,
 		mask = document.createElement("div"),
 		toggleSlideLeft = document.querySelector( ".toggle-slide-left" ),
+		menubutton = document.querySelector(".open-menu"),
 		// toggleSlideRight = document.querySelector( ".toggle-slide-right" ),
 		// toggleSlideTop = document.querySelector( ".toggle-slide-top" ),
 		// toggleSlideBottom = document.querySelector( ".toggle-slide-bottom" ),
@@ -30,8 +31,13 @@
 	/* slide menu left */
 	toggleSlideLeft.addEventListener( "click", function(){
 		classie.add( body, "sml-open" );
+		classie.add( menubutton, "close-menu" );
+		classie.remove( menubutton, "open-menu" );
 		document.body.appendChild(mask);
 		activeNav = "sml-open";
+
+		
+		
 	} );
 
 	// /* slide menu right */
@@ -94,6 +100,8 @@
 	[].slice.call(document.querySelectorAll(".close-menu")).forEach(function(el,i){
 		el.addEventListener( "click", function(){
 			classie.remove( body, activeNav );
+			classie.remove( menubutton, "close-menu" );
+			classie.add( menubutton, "open-menu" );
 			activeNav = "";
 			document.body.removeChild(mask);
 		} );

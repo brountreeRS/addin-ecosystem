@@ -248,7 +248,7 @@ textarea.w-select {
 .w-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 940px;
+  max-width: 1169px;
 }
 .w-container:before,
 .w-container:after {
@@ -290,7 +290,7 @@ textarea.w-select {
   width: 8.33333333%;
 }
 .w-col-2 {
-  width: 16.66666667%;
+  width: 6.66666667%;
 }
 .w-col-3 {
   width: 25%;
@@ -299,7 +299,7 @@ textarea.w-select {
   width: 33.33333333%;
 }
 .w-col-5 {
-  width: 41.66666667%;
+  width: 45.66666667%;
 }
 .w-col-6 {
   width: 50%;
@@ -608,7 +608,7 @@ textarea.w-select {
     width: 33.33333333%;
   }
   .w-col-small-5 {
-    width: 41.66666667%;
+    width: 46.66666667%;
   }
   .w-col-small-6 {
     width: 50%;
