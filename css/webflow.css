@@ -132,15 +132,15 @@ input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
 }
-.w-form {
+.helion-form {
   margin: 0 0 15px;
 }
-.w-form-done {
+.helion-form-done {
   display: none;
   padding: 10px;
   background-color: #dddddd;
 }
-.w-form-fail {
+.helion-form-fail {
   display: none;
   margin-top: 10px;
   padding: 10px;
@@ -211,7 +211,7 @@ textarea.w-select {
   border: 0;
   line-height: inherit;
 }
-.w-form-label {
+.helion-form-label {
   display: inline-block;
   cursor: pointer;
   font-weight: normal;
