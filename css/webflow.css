@@ -6,7 +6,8 @@
 }
 [class^="w-icon-"],
 [class*=" w-icon-"] {
-  font-family: 'webflow-icons';
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'webflow-icons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -215,7 +216,7 @@ textarea.w-select {
   display: inline-block;
   cursor: pointer;
   font-weight: normal;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .w-checkbox,
 .w-radio {
@@ -236,11 +237,10 @@ textarea.w-select {
 }
 .w-checkbox-input,
 .w-radio-input {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
+    margin-top: 1px \9;
   line-height: normal;
   float: left;
-  margin-left: -20px;
+    margin: 4px 0 0 -20px;
 }
 .w-radio-input {
   margin-top: 3px;
@@ -1087,9 +1087,8 @@ textarea.w-select {
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  margin-right: 20px;
-  width: 1em;
+    margin: auto 20px auto auto;
+    width: 1em;
   height: 1em;
 }
 .w-dropdown-list {
@@ -1272,9 +1271,8 @@ textarea.w-select {
   top: 0;
   width: 4em;
   background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
+    background: no-repeat center;
+    cursor: pointer;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -1609,7 +1607,7 @@ textarea.w-select {
   border:1px solid #0096d6;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  border-width:1px 1px 0 1px;
+  border-bottom-width:0;
   background:#fff;
 }
 .w-tab-content {
