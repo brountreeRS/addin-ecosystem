@@ -123,7 +123,7 @@
 						event.stopPropagation();
 					});	
 				}
-			}
+			};
 
 			$(function() {
 
