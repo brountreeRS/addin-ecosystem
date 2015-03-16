@@ -116,23 +116,22 @@
 
   <main class="w-section main">
     <div class="w-container main-container">
-     <h1 class="page-title">Databasess</h1>
-      
-   
-
-
+      <h1 class="page-title">Databases</h1>
       <div class="portfolio-tabs-container">
         <div class="w-tabs portfolio-tabs" data-duration-in="300" data-duration-out="100">
           <div class="w-tab-menu">
-            <a class="w-tab-link w--current w-inline-block tab" data-w-tab="Clusters">
-              <div>Clusters</div>
+            <a class="w-tab-link w-inline-block tab" data-w-tab="Tab 1">
+              <div class="modal-header">Clusters</div>
             </a>
-            <a class="w-tab-link w-inline-block tab" data-w-tab="Instances">
+            <a class="w-tab-link w--current w-inline-block tab" data-w-tab="Tab 2">
               <div>Instances</div>
             </a>
           </div>
           <div class="w-tab-content">
-            <div class="w-tab-pane" data-w-tab="Clusters">
+            <div class="w-tab-pane" data-w-tab="Tab 1">
+              <a class="w-inline-block button" href="#" data-ix="launch-modal-wizard"><img class="button-icon" src="images/launch-cluster.png" width="30" alt="55033de65f1c768a0cb5c3dc_launch-cluster.png">
+                <div class="button-text">Launch Cluster</div>
+              </a>
               <div class="w-embed tab-table">
                 <table cellspacing="0" summary="clusters">
                   <tbody>
@@ -145,8 +144,8 @@
                       <th>VOLUME SIZE</th>
                       <th>STATUS</th>
                       <th></th>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                       <td>DB-Mongo_023</td>
                       <td>MongoDB</td>
                       <td>1.0.0</td>
@@ -154,9 +153,9 @@
                       <td>m1.medium</td>
                       <td>24TB</td>
                       <td>Running</td>
-                      <td><img src="images/dots.png"></td>
-                      </tr>
-                      <tr>
+                      <td>...</td>
+                    </tr>
+                    <tr>
                       <td>DB_MySQL_015</td>
                       <td>MongoDB</td>
                       <td>2.1.0</td>
@@ -164,9 +163,9 @@
                       <td>m1.large</td>
                       <td></td>
                       <td></td>
-                      <td><img src="images/dots.png"></td>
-                      </tr>
-                      <tr>
+                      <td>...</td>
+                    </tr>
+                    <tr>
                       <td>DB_MySQL_014</td>
                       <td>MySQL</td>
                       <td>4.5.2</td>
@@ -174,9 +173,9 @@
                       <td>m1.medium</td>
                       <td></td>
                       <td></td>
-                      <td><img src="images/dots.png"></td>
-                      </tr>
-                      <tr>
+                      <td>...</td>
+                    </tr>
+                    <tr>
                       <td>DB_Mongo_17</td>
                       <td>MongoDB</td>
                       <td>2.0.0</td>
@@ -184,76 +183,83 @@
                       <td>m1.large</td>
                       <td></td>
                       <td></td>
-                      <td><img src="images/dots.png"></td>
-                      </tr>
+                      <td>...</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <div class="w-tab-pane w--tab-active" data-w-tab="Instances">
+            <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
+              <a class="w-inline-block button" href="#" data-ix="launch-modal-wizard"><img class="button-icon" src="images/launch-cluster.png" width="30" alt="55033de65f1c768a0cb5c3dc_launch-cluster.png">
+                <div class="button-text">Launch&nbsp;Instance</div>
+              </a>
               <div class="w-embed tab-table">
-              <table cellspacing="0" summary="instances">
+                <table cellspacing="0" summary="instances">
                   <tbody>
                     <tr>
-                    <th>NAME</th>
-                    <th>DATA STORE</th>
-                    <th>VERSION</th>
-                    <th>SIZE</th>
-                    <th>STATUS</th>
+                      <th>NAME</th>
+                      <th>DATA STORE</th>
+                      <th>VERSION</th>
+                      <th>SIZE</th>
+                      <th>STATUS</th>
+                      <th></th>
                     </tr>
                     <tr>
-                    <td>Sales CRM</td>
-                    <td>MySQL</td>
-                    <td>1.2.0</td>
-                    <td>2.10 MB</td>
-                    <td>STATUS</td>
-                    <td>Active</td>
-                    <td></td>
+                      <td>Sales CRM</td>
+                      <td>MySQL</td>
+                      <td>1.2.0</td>
+                      <td>2.10 MB</td>
+                      <td>Active</td>
+                      <td></td>
                     </tr>
                     <tr>
-                    <td>Sales CRM Backup</td>
-                    <td>MySQL</td>
-                    <td>1.5.0</td>
-                    <td>10.0 MB</td>
-                    <td></td>
+                      <td>Sales CRM Backup</td>
+                      <td>MySQL</td>
+                      <td>1.5.0</td>
+                      <td>10.0 MB</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                    <td>Skunkworks dev</td>
-                    <td>MongoDB</td>
-                    <td>2.5.0</td>
-                    <td>2.5 GB</td>
-                    <td></td>
+                      <td>Skunkworks dev</td>
+                      <td>MongoDB</td>
+                      <td>2.5.0</td>
+                      <td>2.5 GB</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                    <td>Marketing analytics</td>
-                    <td>MySQL</td>
-                    <td>8.5.0</td>
-                    <td>3.0 MB</td>
-                    <td></td>
+                      <td>Marketing analytics</td>
+                      <td>MySQL</td>
+                      <td>8.5.0</td>
+                      <td>3.0 MB</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                    <td>R&amp;D DB1</td>
-                    <td>MongoDB</td>
-                    <td>1.3.0</td>
-                    <td>2.0 GB</td>
-                    <td></td>
+                      <td>R&amp;D DB1</td>
+                      <td>MongoDB</td>
+                      <td>1.3.0</td>
+                      <td>2.0 GB</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                    <td>R&amp;D DB2</td>
-                    <td>MongoDB</td>
-                    <td>10.1.1</td>
-                    <td>3.0 MB</td>
-                    <td></td>
+                      <td>R&amp;D DB2</td>
+                      <td>MongoDB</td>
+                      <td>10.1.1</td>
+                      <td>3.0 MB</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-
             </div>
-          
           </div>
         </div>
       </div>
+
     </div>
    
   </main>
@@ -261,39 +267,26 @@
     <div class="w-row footer-content-1">
       <div class="w-col w-col-3">
         <ul class="w-list-unstyled footer-list">
-          <li><a class="footer-link" href="#">Support</a>
-          </li>
-          <li><a class="footer-link" href="#">Documentation</a>
-          </li>
-          <li><a class="footer-link" href="#">Community Forums</a>
-          </li>
-          <li><a class="footer-link" href="#">Email Us</a>
-          </li>
-          <li><a class="footer-link" href="#">Chat With Us</a>
-          </li>
+          <li><a class="footer-link" href="#">Support</a></li>
+          <li><a class="footer-link" href="#">Documentation</a></li>
+          <li><a class="footer-link" href="#">Community Forums</a></li>
+          <li><a class="footer-link" href="#">Email Us</a></li>
+          <li><a class="footer-link" href="#">Chat With Us</a></li>
           <li>In the U.S.
-            <br><a class="footer-link" href="#">1-855-61CLOUD</a>
-          </li>
+            <br><a class="footer-link" href="#">1-855-61CLOUD</a></li>
           <li>Worldwide
             <a class="footer-link" href="#">
-              <br xmlns="http://www.w3.org/1999/xhtml">+1678-745-9010</a>
-          </li>
+              <br xmlns="http://www.w3.org/1999/xhtml">+1678-745-9010</a></li>
         </ul>
       </div>
       <div class="w-col w-col-3">
         <ul class="w-list-unstyled footer-list">
-          <li><a class="footer-link" href="#">About HP Helion</a>
-          </li>
-          <li><a class="footer-link" href="#">Contact US</a>
-          </li>
-          <li><a class="footer-link" href="#">Events</a>
-          </li>
-          <li><a class="footer-link" href="#">Partners</a>
-          </li>
-          <li><a class="footer-link" href="#">Accessibility</a>
-          </li>
-          <li><a class="footer-link" href="#">Careers</a>
-          </li>
+          <li><a class="footer-link" href="#">About HP Helion</a></li>
+          <li><a class="footer-link" href="#">Contact US</a></li>
+          <li><a class="footer-link" href="#">Events</a></li>
+          <li><a class="footer-link" href="#">Partners</a></li>
+          <li><a class="footer-link" href="#">Accessibility</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
         </ul>
       </div>
       <div class="w-col w-col-3">
@@ -319,6 +312,25 @@
         <br>© 2014 Hewlett-Packard Development Company, L.P.</p>
     </div>
   </footer>
+
+
+ <div class="modal-wizard">
+    <div class="launch-cluster-modal">
+      <div class="modal-header">
+        <h3>Launch Cluster</h3>
+        <a class="w-inline-block close-modal" href="#" data-ix="close-modal-wizard"><img class="close-modal-icon" src="images/1.png" width="48" alt="550342195885f7ec108c9f29_1.png" data-ix="close-modal-wizard">
+        </a>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      </div>
+      <div class="modal-footer"><a class="button" href="#">Cancel</a><a class="button" href="#">Next</a>
+      </div>
+    </div>
+  </div>
+
+
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
    <script src="js/classie.js"></script>
