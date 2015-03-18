@@ -3997,8 +3997,8 @@ module.exports = function($){
     if($.support.cors || !$.ajaxTransport || !window.XDomainRequest){return}
     var httpRegEx = /^https?:\/\//i;
     var getOrPostRegEx = /^get|post$/i;
-    var sameSchemeRegEx = new RegExp("^"+location.protocol,"i");
-    $.ajaxTransport("* text html xml json",function(options,userOptions,jqXHR){
+    var sameSchemeRegEx = new RegExp("^" + location.protocol, "i");
+    $.ajaxTransport("* text html xml json", function(options, userOptions, jqXHR){
         if(!options.crossDomain || !options.async || !getOrPostRegEx.test(options.type)  || !httpRegEx.test(options.url) || !sameSchemeRegEx.test(options.url)){
             return
         }
@@ -4024,6 +4024,7 @@ Webflow.require('ix').init([
   {"slug":"show-toggle-Tablemenus","name":"show toggle Tablemenus","value":{"style":{},"triggers":[{"type":"click","selector":".toggleTablemenu","stepsA":[{"display":"block","opacity":0.99,"wait":200,"transition":"opacity 400ms ease 0ms"}],"stepsB":[{"display":"none","opacity":0,"wait":200,"transition":"transform 400ms ease 0ms, opacity 400ms ease 0ms"}]}]}},
   {"slug":"show-product-row","name":"show product row","value":{"style":{},"triggers":[{"type":"click","selector":".product-row","stepsA":[{"display":"block","opacity":1,"transition":"opacity 500ms ease 0ms"}],"stepsB":[{"display":"none","opacity":0,"transition":"opacity 500ms ease 0ms"}]}]}},
   {"slug":"launch-modal-wizard","name":"launch modal wizard","value":{"style":{},"triggers":[{"type":"click","selector":".modal-wizard","stepsA":[{"display":"block","opacity":0.99,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","x":"100%","y":"0px","scale":1,"group":"A","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"a259f6b0-63c6-31e2-5c11-44d9a72acd58","style":{"modelType":"MacroStyle"}}}}],"stepsB":[],"macro":{"modelType":"Macro","guid":"a259f6b0-63c6-31e2-5c11-44d9a72acd58","style":{"modelType":"MacroStyle"}}}]}},
-  {"slug":"close-modal-wizard","name":"close modal wizard","value":{"style":{},"triggers":[{"type":"click","selector":".modal-wizard","stepsA":[{"display":"none","opacity":0,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","x":"-100%","y":"0px","scale":0.5}],"stepsB":[]}]}}
+  {"slug":"close-modal-wizard","name":"close modal wizard","value":{"style":{},"triggers":[{"type":"click","selector":".modal-wizard","stepsA":[{"display":"none","opacity":0,"transition":"transform 500ms ease 0ms, opacity 500ms ease 0ms","x":"-100%","y":"0px","scale":0.5}],"stepsB":[]}]}},
+  {"slug":"toggle-product-data-toggle","name":"toggle-product-data-toggle","value":{"style":{},"triggers":[{"type":"click","selector":".product-data-toggle","siblings":true,"stepsA":[{"display":"block","opacity":1,"height":"auto","transition":"opacity 500ms ease 0ms, height 500ms ease 0ms"}],"stepsB":[{"title":"hide","display":"none","opacity":0,"height":0,"transition":"opacity 500ms ease 0ms, height 500ms ease 0ms"}]}]}}
 ]);
 

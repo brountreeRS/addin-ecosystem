@@ -83,6 +83,11 @@ table {
   width:100%;
 }
 
+.w-container {
+  padding:0 20px;
+}
+
+
 
 .navbar {
   background-color: white;
@@ -265,10 +270,7 @@ table {
   display: inline-block;
   font-size: 12px;
 }
-html.w-mod-js *[data-ix="display-none-on-load"] {
-  display: none;
-  opacity: 0;
-}
+
 @media (max-width: 991px) {
   .navbar {
     background-color: #f2f2f2;
@@ -484,6 +486,18 @@ a:link {color:#0096d6;text-decoration:none;}
 }
 .api-details-output-container {padding:20px;}
 
+.tile-container {
+  position: relative;
+  width: 260px;
+  height: 380px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  float: left;
+  border: 1px solid #d6d6d6;
+  background-color: white;
+  box-shadow: #d6d6d6 1px 1px 2px 1px;
+}
+
 
 .tile {
   position: relative;
@@ -633,4 +647,68 @@ a:link {color:#0096d6;text-decoration:none;}
   top: 0px;
   right: 0px;
 }
+
+
+
+.faux-column {
+  padding: 2px 5px;
+  display: flex;
+  align-items: flex-start;
+  flex:1;
+}
+html.w-mod-js *[data-ix="display-none-on-load"] {
+  display: none;
+  opacity: 0;
+  height: 0px;
+}
+
+
+.faux-table-row, .faux-table-row-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;    
+}
+
+
+.faux-table-row div:nth-child(5), .faux-table-row div:nth-child(6),
+.faux-table-row-header div:nth-child(5), .faux-table-row-header div:nth-child(6) {
+  flex: 0 0 16%
+}
+.faux-table-row div:nth-child(3), .faux-table-row div:nth-child(4), .faux-table-row div:nth-child(7),
+.faux-table-row-header div:nth-child(3), .faux-table-row-header div:nth-child(4), .faux-table-row-header div:nth-child(7) {
+  flex: 0 0 6%
+}
+
+header.flex {
+  position:fixed;
+  top:0;
+  z-index:2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  padding: 5px 10px;
+
+ 
+}
+
+header.flex div {
+  display: flex;
+  flex:0 1 auto;
+  justify-content: left; 
+  border:1px solid #ff6600;
+}
+
+/*header.flex div:nth-child(1) {
+  flex: 0 0 4%
+}
+
+header.flex div:nth-child(3) {
+  flex: 0 0 20%
+}
+
+header.flex div:nth-child(4) {
+  flex: 0 0 20%
+}*/
+
 
