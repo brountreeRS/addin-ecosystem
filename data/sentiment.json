@@ -1,0 +1,343 @@
+{
+  "positive": [
+    {
+      "sentiment": "Right",
+      "topic": "NowThe Nantucket ProjectPerson of the Year 2014TIME 100TIME ExplainsTop 10 Everything of 2014Top of the World Subscribe Newsletters Feedback Privacy Policy Your California Privacy Rights Terms of Use Ad Choices Ad Choices RSS TIME Apps TIME for Kids",
+      "score": 0.5685799620527161,
+      "original_text": "Right NowThe Nantucket ProjectPerson of the Year 2014TIME 100TIME ExplainsTop 10 Everything of 2014Top of the World Subscribe Newsletters Feedback Privacy Policy Your California Privacy Rights Terms of Use Ad Choices Ad Choices RSS TIME Apps TIME for Kids",
+      "original_length": 255,
+      "normalized_text": "Right NowThe Nantucket ProjectPerson of the Year 2014TIME 100TIME ExplainsTop 10 Everything of 2014Top of the World Subscribe Newsletters Feedback Privacy Policy Your California Privacy Rights Terms of Use Ad Choices Ad Choices RSS TIME Apps TIME for Kids",
+      "normalized_length": 255
+    },
+    {
+      "sentiment": "Still So Potent White House Questions Israeli Leader",
+      "topic": null,
+      "score": 0.5563320219677688,
+      "original_text": "Is Still So Potent White House Questions Israeli Leader",
+      "original_length": 55,
+      "normalized_text": "Is Still So Potent White House Questions Israeli Leader",
+      "normalized_length": 55
+    },
+    {
+      "sentiment": "Safe",
+      "topic": "Engineered Apples and Potatoes",
+      "score": 0.7176687736973063,
+      "original_text": "Engineered Apples and Potatoes Are Safe",
+      "original_length": 39,
+      "normalized_text": "Engineered Apples and Potatoes Are Safe",
+      "normalized_length": 39
+    },
+    {
+      "sentiment": "can innovate",
+      "topic": null,
+      "score": 0.42279137987234977,
+      "original_text": "it can innovate",
+      "original_length": 15,
+      "normalized_text": "it can innovate",
+      "normalized_length": 15
+    },
+    {
+      "sentiment": "save",
+      "topic": "those innovations",
+      "score": 0.41366197954985534,
+      "original_text": "those innovations save the company?",
+      "original_length": 35,
+      "normalized_text": "those innovations save the company?",
+      "normalized_length": 35
+    },
+    {
+      "sentiment": "has innovated",
+      "topic": null,
+      "score": 0.8236550729900429,
+      "original_text": "it has innovated many technologies",
+      "original_length": 34,
+      "normalized_text": "it has innovated many technologies",
+      "normalized_length": 34
+    },
+    {
+      "sentiment": "pioneer",
+      "topic": "centered on the Silicon Valley",
+      "score": 0.5274215517597863,
+      "original_text": "centered on the Silicon Valley pioneer",
+      "original_length": 38,
+      "normalized_text": "centered on the Silicon Valley pioneer",
+      "normalized_length": 38
+    },
+    {
+      "sentiment": "an ambitious",
+      "topic": "restructuring",
+      "score": 0.5685799620527161,
+      "original_text": "an ambitious restructuring",
+      "original_length": 26,
+      "normalized_text": "an ambitious restructuring",
+      "normalized_length": 26
+    },
+    {
+      "sentiment": "are winning over",
+      "topic": "two, the fruits of that effort",
+      "score": 0.6745392194237302,
+      "original_text": "two, the fruits of that effort are winning over investors",
+      "original_length": 57,
+      "normalized_text": "two, the fruits of that effort are winning over investors",
+      "normalized_length": 57
+    },
+    {
+      "sentiment": "take bold new approaches",
+      "topic": null,
+      "score": 0.44365059175771526,
+      "original_text": "take bold new approaches",
+      "original_length": 24,
+      "normalized_text": "take bold new approaches",
+      "normalized_length": 24
+    },
+    {
+      "sentiment": "the nascent",
+      "topic": "3D",
+      "score": 0.5685799620527161,
+      "original_text": "the nascent 3D",
+      "original_length": 14,
+      "normalized_text": "the nascent 3D",
+      "normalized_length": 14
+    },
+    {
+      "sentiment": "the kind of ",
+      "topic": null,
+      "score": 0.0014422497762100305,
+      "original_text": "that could become the kind of ",
+      "original_length": 30,
+      "normalized_text": "that could become the kind of ",
+      "normalized_length": 30
+    },
+    {
+      "sentiment": "achieve just",
+      "topic": null,
+      "score": 0.8448465972936622,
+      "original_text": "achieve just that",
+      "original_length": 17,
+      "normalized_text": "achieve just that",
+      "normalized_length": 17
+    },
+    {
+      "sentiment": "strong",
+      "topic": "HP",
+      "score": 0.7176687736973063,
+      "original_text": "HP is strong",
+      "original_length": 12,
+      "normalized_text": "HP is strong",
+      "normalized_length": 12
+    },
+    {
+      "sentiment": "times faster",
+      "topic": "10",
+      "score": 0.5274215517597863,
+      "original_text": "10 times faster",
+      "original_length": 15,
+      "normalized_text": "10 times faster",
+      "normalized_length": 15
+    },
+    {
+      "sentiment": "leading",
+      "topic": "3D printers on the market",
+      "score": 0.5685799620527161,
+      "original_text": "leading 3D printers on the market",
+      "original_length": 33,
+      "normalized_text": "leading 3D printers on the market",
+      "normalized_length": 33
+    },
+    {
+      "sentiment": "hopes",
+      "topic": null,
+      "score": 0.7176687736973063,
+      "original_text": "hopes to employ metal",
+      "original_length": 21,
+      "normalized_text": "hopes to employ metal",
+      "normalized_length": 21
+    },
+    {
+      "sentiment": "agree",
+      "topic": "analysts",
+      "score": 0.5274215517597863,
+      "original_text": "analysts agree",
+      "original_length": 14,
+      "normalized_text": "analysts agree",
+      "normalized_length": 14
+    },
+    {
+      "sentiment": "simpler",
+      "topic": null,
+      "score": 0.4814048859050132,
+      "original_text": "it’s simpler just",
+      "original_length": 17,
+      "normalized_text": "it’s simpler just",
+      "normalized_length": 17
+    },
+    {
+      "sentiment": "care",
+      "topic": "newer, specialized applications for markets like architectural design and health",
+      "score": 0.7176687736973063,
+      "original_text": "newer, specialized applications for markets like architectural design and health care",
+      "original_length": 85,
+      "normalized_text": "newer, specialized applications for markets like architectural design and health care",
+      "normalized_length": 85
+    },
+    {
+      "sentiment": "inviting developers",
+      "topic": null,
+      "score": 0.7176687736973063,
+      "original_text": "it’s inviting developers",
+      "original_length": 24,
+      "normalized_text": "it’s inviting developers",
+      "normalized_length": 24
+    },
+    {
+      "sentiment": "willing",
+      "topic": "shows HP",
+      "score": 0.7176687736973063,
+      "original_text": "shows HP is willing",
+      "original_length": 19,
+      "normalized_text": "shows HP is willing",
+      "normalized_length": 19
+    },
+    {
+      "sentiment": "innovate in",
+      "topic": null,
+      "score": 0.7176687736973063,
+      "original_text": "innovate in areas",
+      "original_length": 17,
+      "normalized_text": "innovate in areas",
+      "normalized_length": 17
+    },
+    {
+      "sentiment": "any ambitious",
+      "topic": "project",
+      "score": 0.5685799620527161,
+      "original_text": "any ambitious project",
+      "original_length": 21,
+      "normalized_text": "any ambitious project",
+      "normalized_length": 21
+    },
+    {
+      "sentiment": "a seamless",
+      "topic": "system",
+      "score": 0.3268225039013405,
+      "original_text": "a seamless system?",
+      "original_length": 18,
+      "normalized_text": "a seamless system?",
+      "normalized_length": 18
+    },
+    {
+      "sentiment": "rich",
+      "topic": "tech giants",
+      "score": 0.5685799620527161,
+      "original_text": "rich tech giants",
+      "original_length": 16,
+      "normalized_text": "rich tech giants",
+      "normalized_length": 16
+    },
+    {
+      "sentiment": "its innovative",
+      "topic": "roots",
+      "score": 0.5685799620527161,
+      "original_text": "its innovative roots",
+      "original_length": 20,
+      "normalized_text": "its innovative roots",
+      "normalized_length": 20
+    },
+    {
+      "sentiment": "can innovate",
+      "topic": "big companies",
+      "score": 0.5326129984467051,
+      "original_text": "big companies can innovate",
+      "original_length": 26,
+      "normalized_text": "big companies can innovate",
+      "normalized_length": 26
+    }
+  ],
+  "negative": [
+    {
+      "sentiment": "Scathing",
+      "topic": "Report Calls Lab Safety at CDC",
+      "score": -0.7242245628770796,
+      "original_text": "Scathing Report Calls Lab Safety at CDC",
+      "original_length": 39,
+      "normalized_text": "Scathing Report Calls Lab Safety at CDC",
+      "normalized_length": 39
+    },
+    {
+      "sentiment": "A Less Perfect",
+      "topic": "Union",
+      "score": -0.4286180496639959,
+      "original_text": "A Less Perfect Union",
+      "original_length": 20,
+      "normalized_text": "A Less Perfect Union",
+      "normalized_length": 20
+    },
+    {
+      "sentiment": "painful",
+      "topic": "turnaround",
+      "score": -0.6887336106458627,
+      "original_text": "painful turnaround",
+      "original_length": 18,
+      "normalized_text": "painful turnaround",
+      "normalized_length": 18
+    },
+    {
+      "sentiment": "Killing",
+      "topic": "Medical Bills",
+      "score": -0.7176687736973063,
+      "original_text": "Medical Bills Are Killing",
+      "original_length": 25,
+      "normalized_text": "Medical Bills Are Killing",
+      "normalized_length": 25
+    },
+    {
+      "sentiment": "a risky product",
+      "topic": "Sprout",
+      "score": -0.5274215517597863,
+      "original_text": "Sprout is a risky product",
+      "original_length": 25,
+      "normalized_text": "Sprout is a risky product",
+      "normalized_length": 25
+    },
+    {
+      "sentiment": "as disruptive as multi-jet fusion",
+      "topic": null,
+      "score": -0.6280145725181376,
+      "original_text": "being as disruptive as multi-jet fusion",
+      "original_length": 39,
+      "normalized_text": "being as disruptive as multi-jet fusion",
+      "normalized_length": 39
+    },
+    {
+      "sentiment": "predictable",
+      "topic": "outcomes",
+      "score": -0.39388090966436723,
+      "original_text": "predictable outcomes",
+      "original_length": 20,
+      "normalized_text": "predictable outcomes",
+      "normalized_length": 20
+    },
+    {
+      "sentiment": "Perhaps the most disruptive",
+      "topic": "innovation HP",
+      "score": -0.49021922145691477,
+      "original_text": "Perhaps the most disruptive innovation HP",
+      "original_length": 41,
+      "normalized_text": "Perhaps the most disruptive innovation HP",
+      "normalized_length": 41
+    },
+    {
+      "sentiment": "faces uncertainty",
+      "topic": null,
+      "score": -0.44365059175771526,
+      "original_text": "the Machine faces uncertainty",
+      "original_length": 29,
+      "normalized_text": "the Machine faces uncertainty",
+      "normalized_length": 29
+    }
+  ],
+  "aggregate": {
+    "sentiment": "positive",
+    "score": 0.29906306655061476
+  }
+}

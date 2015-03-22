@@ -207,8 +207,8 @@ textarea.w-select {
 .w-button {
   display: inline-block;
   padding: 12px;
-  background-color: black;
-  color: white;
+  background-color: #0096d6;
+  color: #fff;
   border: 0;
   line-height: inherit;
 }
@@ -1542,7 +1542,7 @@ textarea.w-select {
   user-select: none;
 }
 .w-nav-button.w--open {
-  background-color: #999;
+  background-color: #ff6600;
   color: white;
 }
 .w-nav[data-collapse="all"] .w-nav-menu {
