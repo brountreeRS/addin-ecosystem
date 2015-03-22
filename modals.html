@@ -1,3 +1,33 @@
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/helion-add-in-ecosystem.webflow.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+
+<style type="text/css">
+	
+	dl {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+  }
+  dt {
+    float: left;
+    clear: left;
+    width: 140px;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+  }
+  dt:after {
+    content: ":";
+  }
+  dd {
+    margin: 0 0 0 140px;
+    padding: 0 0 0.5em 0;
+  }
+</style>
+
+
+
 <div class="modal" id="idol-activate">
 
 	<div class="hd">
@@ -9,10 +39,12 @@
 
 	<div class="bd">
 
+		<h4>https://api.idolondemand.com/1/api/sync/analyzesentiment/v1?url=http%3A%2F%2Ftime.com%2F3603348%2Fhp-hewlett-packard%2F&language=eng&apikey=5063cd5f-d178-4aa8-8fac-e688ec03c6cc</h4>
+
 		<p>To activate IDOL OnDemand service, enter your email to generate your IDOL user key. You can then use your IDOL user key in your application to access IDOL services</p>
 		<label for="email-input">Please Enter Your Email Address</label>
 		<input id="email-input" name="email-input" type="text">
-		<a href="#">Generate IDOL User Key</a>
+		<a class="button btn" href="#">Generate IDOL User Key</a>
 
 		<div class="key-output">
 
@@ -25,7 +57,7 @@
 
 	<div class="ft">
 	
-		<a href="#">Close</a>
+		<a class="button btn" href="#">Close</a>
 	
 	</div>
 
@@ -47,11 +79,158 @@
 
 	<div class="ft">
 	
-		<a href="#">Cancel</a>
-		<a href="#">Next</a>
+		<a class="button btn" href="#">Cancel</a>
+		<a class="button btn" href="#">Next</a>
 	
 	</div>
 
 </div>
 
-CancelNext
+
+
+
+
+<div class="modal" id="db-info">
+	<div class="hd">
+		<h3>database name</h3>
+		<a class="close" href="#">Close</a>
+	</div>
+	<div class="bd">
+		<h3> GENERAL</h3>
+		<div class="w-row">
+			<div class="w-col w-col-6">
+				<div>
+					<span class="data-label">SCHEMAS:</span>
+					<span class="data-output">000123</span>
+				</div>
+				<div>
+					<span class="data-label">REGION:</span>
+					<span class="data-output">A</span>
+				</div>
+				<div>
+					<span class="data-label">AZ DEPLOYED:</span>
+					<span class="data-output">AZ-1, AZ-2, AZ-3</span>
+				</div>
+				<div>
+					<span class="data-label">IP ADDRESSES:</span>
+					<span class="data-output">16.125.104.247</span>
+					<span class="data-output">16.126.105.372</span>
+					<span class="data-output">15.234.928.221</span>
+				</div>
+			</div>
+			<div class="w-col w-col-6">
+				<div>
+					<span class="data-label">NODES:</span>
+					<span class="data-output">10</span>
+				</div>
+				<div>
+					<span class="data-label">CLUSTER SIZE:</span>
+					<span class="data-output">10TB</span>
+				</div>
+				<div>
+					<span class="data-label">VERSION:</span>
+					<span class="data-output">v7.1</span>
+				</div>
+				<div>
+					<span class="data-label">STATUS:</span>
+					<span class="data-output">Active</span>
+				</div>
+				<div>
+					<span class="data-label">MANAGE:</span>
+					<span class="data-output">DB-Vertica-001 Cluster Management</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ft">
+		<a class="button btn" href="#">Close</a>
+	</div>
+</div>
+
+
+
+
+<div class="modal" id="launch-cluster">
+
+	<div class="hd">
+
+		<h3>Launch Cluster</h3>
+		<a href="#">Close</a>
+	
+	</div>
+
+	<div class="bd">
+
+		<div class="form-screen-1">
+
+			<div class="wizard-nav">
+
+				<nav>
+					<a href="#">01 Details</a>
+					<a href="#">02 Networking</a>
+					<a href="#">03 Topology summary</a>
+				</nav>
+			</div>
+
+			<div class="cluster-info">
+			
+				<input class="w-input" id="cluster-name" type="text" placeholder="" name="cluster-name" data-name="cluster-name">
+				<label for="cluster-name">Cluster name</label>
+
+				<input class="w-input" id="data-store" type="text" placeholder="" name="data-store" data-name="data-store">
+				<label for="data-store">Data Store</label>
+
+				<input class="w-input" id="num-nodes" type="text" placeholder="" name="num-nodes" data-name="num-nodes">
+				<label for="num-nodes">Number of Nodes</label>
+
+				<div class="w-checkbox api-actions">
+	 				<input class="w-checkbox-input" id="ephemeral" type="checkbox" name="ephemeral" data-name="ephemeral">
+	    			<label class="helion-form-label" for="ephemeral">Use ephemeral</label>
+				</div>
+
+				<input class="w-input" id="num-fault" type="text" placeholder="" name="num-fault" data-name="num-fault">
+				<label for="num-fault">Number of Fault Groups</label>
+
+				<div class="w-checkbox api-actions">
+	 				<input class="w-checkbox-input" id="ha-node" type="checkbox" name="ha-node" data-name="ha-node">
+	    			<label class="helion-form-label" for="ha-node">Control node HA</label>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="form-screen-2">
+
+			<p>Choose network from Available networks to Selected networks by push button or drag and drop, you may change NIC order by drag and drop as well.</p>
+
+			<p>Available Networks</p>
+			<ul>
+				<li><a href="#">Neutron</a></li>
+				<li><a href="#">ext-net</a></li>
+				<li><a href="#">marketplace-network-k6vdr3qf4vm5</a></li>
+				<li><a href="#">SVC</a></li>
+				<li><a href="#">default-net</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="ft">
+	
+		<a class="button btn" href="#">Cancel</a>
+		<a class="button btn" href="#">Next</a>
+	
+	</div>
+
+</div>
+	
+ 
+
+ 
+
+ 
+
+
+
+

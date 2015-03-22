@@ -7,10 +7,93 @@
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/helion-add-in-ecosystem.webflow.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/helion-add-in-ecosystem.webflow.css"> -->
   <script type="text/javascript" src="js/modernizr.js"></script>
    <link rel="shortcut icon" type="image/x-icon" href="images/hphelionfav.png">
   <link rel="apple-touch-icon" href="images/hphelionfav.png">
+
+<style type="text/css">
+  #page-wrapper {display: flex;flex-direction:column;}
+  header {display:flex;}
+
+  header, header div, main, footer {flex:1;}
+
+  header div {flex:0 0 auto;width:20%;}
+
+  .menu {
+    position: fixed;
+    z-index: 20;
+    background:#fff;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    padding-top:75px;
+    overflow: scroll;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+div.slide-menu-left {
+    left: -300px
+}
+
+body.sml-open div.slide-menu-left {
+    left: 0
+}
+
+.faux-column {
+  padding: 2px 5px;
+  display: flex;
+  align-items: flex-start;
+  flex:1;
+}
+
+.tiles-container {
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.add-in-tile {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .add-in-tile {
+    width: 30%;
+    margin: 0 auto 2%;
+    min-width: 0;
+  }
+}
+
+.faux-table-row, .faux-table-row-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;    
+}
+
+
+.faux-table-row div:nth-child(5), .faux-table-row div:nth-child(6),
+.faux-table-row-header div:nth-child(5), .faux-table-row-header div:nth-child(6) {
+  flex: 0 0 16%
+}
+.faux-table-row div:nth-child(3), .faux-table-row div:nth-child(4), .faux-table-row div:nth-child(7),
+.faux-table-row-header div:nth-child(3), .faux-table-row-header div:nth-child(4), .faux-table-row-header div:nth-child(7) {
+  flex: 0 0 6%
+}
+
+.catalog-text img {width:160px;}
+</style>
+
 </head>
 <body class="dashboard">
   <div class="menu slide-menu-left">
@@ -55,21 +138,21 @@
       </nav>
   </div>
 
-<div id="page-wrapper">
+  <div id="page-wrapper">
 
-  <header class="flex">
-    
-    <div class="burger">
-      <a href="#"><img src="images/blueburger.png"></a>
-    </div>
+    <header>
+      
+      <div class="burger open-menu toggle-slide-left">
+        <a href="#"><img src="images/blueburger.png"></a>
+      </div>
 
-    <div class="logo">
-      <a class="w-nav-brand brand-link" href="index.html" style="margin-top:20px;">
-        <img src="images/helion-logo.png" width="216"/>
-      </a>
-    </div>
+      <div class="logo">
+        <a class="w-nav-brand brand-link" href="index.html" style="margin-top:20px;">
+          <img src="images/helion-logo.png" width="216"/>
+        </a>
+      </div>
 
-    
+      
 
       <div class="w-dropdown header-dropdown" data-delay="0">
         <span class="w-dropdown-toggle">
@@ -85,430 +168,391 @@
         </nav>
       </div>
 
-  
-
-  
-
-    <div class="header-icon-menu">
-
-      
-        <a href="#">
-          <img src="images/search.png" width="22"/>
-        </a>
-        <a href="#">
-          <img src="images/help.png" width="22"/>
-        </a>
-        <a href="#">
-          <img src="images/alerts.png" width="22"/> 
-        </a>
-        <a href="#">
-          <img src="images/grid.png" width="22"/> 
-        </a>
-        <a href="#">
-          <img src="images/avatar.png" width="22"/>
-        </a>
-      
-
-    </div>
-
-  </header>
-
-  <!-- <div class="w-nav navigation" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
     
-    <div class="w-container">
-      
-      <input class="open-menu toggle-slide-left" type="image" src="images/blueburger.png" alt="Submit" width="25" style="position:relative;float:left; margin:20px 50px 0 0;">
-      <a class="w-nav-brand brand-link" href="index.html" style="margin-top:20px;">
-        <img src="images/helion-logo.png" width="216"/>
-      </a>
-      <nav class="w-nav-menu nav-menu" role="navigation">
-        <a class="w-nav-link nav-link" href="#">
-          <img src="images/search.png" width="22"/>
-        </a>
-        <a class="w-nav-link nav-link" href="#">
-          <img src="images/help.png" width="22"/>
-        </a>
-        <a class="w-nav-link nav-link" href="#">
-          <img src="images/alerts.png" width="22"/> 
-        </a>
-        <a class="w-nav-link nav-link" href="#">
-          <img src="images/grid.png" width="22"/> 
-        </a>
-        <a class="w-nav-link nav-link" href="#">
-          <img src="images/avatar.png" width="22"/>
-        </a>
-      </nav>
-      <div class="w-nav-button nav-link menu" style="float:left;margin-top:10px;">
-        <div class="w-icon-nav-menu"></div>
-      </div>
-      <div class="w-dropdown header-dropdown" data-delay="0">
-        <div class="w-dropdown-toggle">
-          <div>SCD&nbsp;East Coast</div>
-          <div class="w-icon-dropdown-toggle"></div>
-        </div>
-        <nav class="w-dropdown-list">
-          <a class="w-dropdown-link" href="#">Sales &amp; Marketing</a>
-          <a class="w-dropdown-link" href="#">Finance &amp; HR</a>
-          <a class="w-dropdown-link" href="#">R&amp;D Programs</a>
-          <a class="w-dropdown-link" href="#">R&amp;D Skunkworks</a>
-          <a class="w-dropdown-link" href="#">East Operations</a>
+
+    
+
+      <div class="header-icon-menu">
+        <nav>
+          <a href="#">
+            <img src="images/search.png" width="22"/>
+          </a>
+          <a href="#">
+            <img src="images/help.png" width="22"/>
+          </a>
+          <a href="#">
+            <img src="images/alerts.png" width="22"/> 
+          </a>
+          <a href="#">
+            <img src="images/grid.png" width="22"/> 
+          </a>
+          <a href="#">
+            <img src="images/avatar.png" width="22"/>
+          </a>
         </nav>
       </div>
-    </div>
-  </div>
- -->
+
+    </header>
+
+      
+     
 
 
 
 
 
-  <main class="w-section main">
-    <div class="w-container main-container">
-     <!--  <h1 class="page-title">Helion OpenStack Dashboard</h1> -->
-    </div>
+    <main class="w-section main">
+      <div class="w-container main-container">
+       <h1 class="page-title">Helion OpenStack Dashboard</h1>
+      </div>
+      
+
+
+      <div class="w-container tiles-container">
+       
+          <h2>Helion OpenStack Dashboard</h2>
+          
+
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Instances</h3>
+            <p class="catalog-text"><img src="images/u78.png">
+              <!-- <img class="tile-block-image" src="images/u78.png"/> -->
+              120
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+                <img class="action-dots" src="images/dots.png" data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#">
+                  <img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#">
+                  <img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Server Ram (GB)</h3>
+            <p class="catalog-text"><img src="images/u91.png">
+              180
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
+                <img class="action-dots" src="images/dots.png" data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#">
+                  <img class="action-icon" src="images/install.png" width="24"  data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#">
+                  <img class="action-icon" src="images/download.png" width="28">
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Floating IPs</h3>
+            <p class="catalog-text"><img src="images/u104.png">
+              16
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+           <div class="add-in-tile">
+            <h3 class="catalog-header">VCPUs</h3>
+            <p class="catalog-text"><img src="images/u117.png">
+              65
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+           <div class="add-in-tile">
+            <h3 class="catalog-header">Security Groups</h3>
+            <p class="catalog-text"><img src="images/u130.png">
+              10
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Security Group Rules</h3>
+            <p class="catalog-text"><img src="images/u143.png">
+              50
+              8
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Server Metadata Limit</h3>
+            <p class="catalog-text">
+              50
+             
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="add-in-tile">
+            <h3 class="catalog-header">Image Metadate Limit</h3>
+            <p class="catalog-text">
+              300
+             
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Volumes</h3>
+            <p class="catalog-text"><img src="images/u174.png">
+              300
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Volume Sizes</h3>
+            <p class="catalog-text"><img src="images/u187.png">
+              5.7k
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Load Balancers</h3>
+            <p class="catalog-text"><img src="images/u200.png">
+              12
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Load Balancer Name Length</h3>
+            <p class="catalog-text">
+              64
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Load Balancer Max Nodes</h3>
+            <p class="catalog-text">
+              50
+              
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-in-tile">
+            <h3 class="catalog-header">Load Balancer VPS Limit</h3>
+            <p class="catalog-text">
+              10
+            </p>
+            <div class="tile-footer">
+              <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
+              </a>
+              <div class="togglemenu" data-ix="display-none-on-load">
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
+                  <div class="action-text" data-ix="show-product-row">install</div>
+                </a>
+                <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
+                  <div class="action-text">download again</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+         
+
+ 
+      </div>
+    </main>
     
 
-
-    <div class="w-container tiles-container">
-      <div class="w-clearfix tiles">
-        <h2>Helion OpenStack Dashboard</h2>
-        
-
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Instances</h3>
-          <p class="catalog-text" style="background:url(images/u78.png) no-repeat center center;background-size:166px 166px;">
-            <!-- <img class="tile-block-image" src="images/u78.png"/> -->
-            120
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
-              <img class="action-dots" src="images/dots.png" data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#">
-                <img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#">
-                <img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
+    <footer class="w-section footer">
+      <div class="w-row footer-content-1">
+        <div class="w-col w-col-3">
+          <ul class="w-list-unstyled footer-list">
+            <li><a class="footer-link" href="#">Support</a></li>
+            <li><a class="footer-link" href="#">Documentation</a></li>
+            <li><a class="footer-link" href="#">Community Forums</a></li>
+            <li><a class="footer-link" href="#">Email Us</a></li>
+            <li><a class="footer-link" href="#">Chat With Us</a></li>
+            <li>In the U.S.
+              <br><a class="footer-link" href="#">1-855-61CLOUD</a></li>
+            <li>Worldwide
+              <a class="footer-link" href="#">
+                <br xmlns="http://www.w3.org/1999/xhtml">+1678-745-9010</a></li>
+          </ul>
         </div>
-        
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Server Ram (GB)</h3>
-          <p class="catalog-text" style="background:url(images/u91.png) no-repeat center center;background-size:166px 166px;">
-            180
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus">
-              <img class="action-dots" src="images/dots.png" data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#">
-                <img class="action-icon" src="images/install.png" width="24"  data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#">
-                <img class="action-icon" src="images/download.png" width="28">
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
+        <div class="w-col w-col-3">
+          <ul class="w-list-unstyled footer-list">
+            <li><a class="footer-link" href="#">About HP&nbsp;Helion</a></li>
+            <li><a class="footer-link" href="#">Contact US</a></li>
+            <li><a class="footer-link" href="#">Events</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Accessibility</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
         </div>
-
-
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Floating IPs</h3>
-          <p class="catalog-text" style="background:url(images/u104.png) no-repeat center center;background-size:166px 166px;">
-            16
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
+        <div class="w-col w-col-3">
+          <p class="footer-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p>
         </div>
-
-         <div class="add-in-tile">
-          <h3 class="catalog-header">VCPUs</h3>
-          <p class="catalog-text" style="background:url(images/u117.png) no-repeat center center;background-size:166px 166px;">
-            65
+        <div class="w-col w-col-3">
+          <p class="footer-list">@hphelioncloud</p>
+            <p>Hear #HPHelion Harry Sutton at #OpenStack Meetup in Boston on Aug 14 at 7pm <a class="footer-link" href="#">http://hp.io/6012lbtm</a>
           </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
+          <div class="footer-social">
+            <img class="footer-social-icon" src="images/twitter.png" width="32" alt="twitter">
+            <img class="footer-social-icon" src="images/facebook.png" width="32" alt="facebook">
+            <img class="footer-social-icon" src="images/linkedin.png" width="32" alt="linkedin">
+            <img class="footer-social-icon" src="images/youtube.png" width="32" alt="youtube">
           </div>
-        </div>
-
-         <div class="add-in-tile">
-          <h3 class="catalog-header">Security Groups</h3>
-          <p class="catalog-text" style="background:url(images/u130.png) no-repeat center center;background-size:166px 166px;">
-            10
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Security Group Rules</h3>
-          <p class="catalog-text" style="background:url(images/u143.png) no-repeat center center;background-size:166px 166px;">
-            50
-            8
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Server Metadata Limit</h3>
-          <p class="catalog-text">
-            50
-           
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-         <div class="add-in-tile">
-          <h3 class="catalog-header">Image Metadate Limit</h3>
-          <p class="catalog-text">
-            300
-           
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
- <div class="add-in-tile">
-          <h3 class="catalog-header">Volumes</h3>
-          <p class="catalog-text" style="background:url(images/u174.png) no-repeat center center;background-size:166px 166px;">
-            300
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Volume Sizes</h3>
-          <p class="catalog-text" style="background:url(images/u187.png) no-repeat center center;background-size:166px 166px;">
-            5.7k
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Load Balancers</h3>
-          <p class="catalog-text" style="background:url(images/u200.png) no-repeat center center;background-size:166px 166px;">
-            12
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Load Balancer Name Length</h3>
-          <p class="catalog-text">
-            64
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Load Balancer Max Nodes</h3>
-          <p class="catalog-text">
-            50
-            
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="add-in-tile">
-          <h3 class="catalog-header">Load Balancer VPS Limit</h3>
-          <p class="catalog-text">
-            10
-          </p>
-          <div class="tile-footer">
-            <a class="w-inline-block action-link" href="#" data-ix="show-toggle-menus"><img class="action-dots" src="images/dots.png"  data-ix="show-toggle-menus">
-            </a>
-            <div class="togglemenu" data-ix="display-none-on-load">
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/install.png" width="24" data-ix="show-product-row">
-                <div class="action-text" data-ix="show-product-row">install</div>
-              </a>
-              <a class="w-inline-block action-link" href="#"><img class="action-icon" src="images/download.png" width="28" >
-                <div class="action-text">download again</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-       
-
-      </div>
-    </div>
-  </main>
-  <footer class="w-section footer">
-    <div class="w-row footer-content-1">
-      <div class="w-col w-col-3">
-        <ul class="w-list-unstyled footer-list">
-          <li><a class="footer-link" href="#">Support</a></li>
-          <li><a class="footer-link" href="#">Documentation</a></li>
-          <li><a class="footer-link" href="#">Community Forums</a></li>
-          <li><a class="footer-link" href="#">Email Us</a></li>
-          <li><a class="footer-link" href="#">Chat With Us</a></li>
-          <li>In the U.S.
-            <br><a class="footer-link" href="#">1-855-61CLOUD</a></li>
-          <li>Worldwide
-            <a class="footer-link" href="#">
-              <br xmlns="http://www.w3.org/1999/xhtml">+1678-745-9010</a></li>
-        </ul>
-      </div>
-      <div class="w-col w-col-3">
-        <ul class="w-list-unstyled footer-list">
-          <li><a class="footer-link" href="#">About HP&nbsp;Helion</a></li>
-          <li><a class="footer-link" href="#">Contact US</a></li>
-          <li><a class="footer-link" href="#">Events</a></li>
-          <li><a class="footer-link" href="#">Partners</a></li>
-          <li><a class="footer-link" href="#">Accessibility</a></li>
-          <li><a class="footer-link" href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div class="w-col w-col-3">
-        <p class="footer-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&nbsp;</p>
-      </div>
-      <div class="w-col w-col-3">
-        <p class="footer-list">@hphelioncloud</p>
-          <p>Hear #HPHelion Harry Sutton at #OpenStack Meetup in Boston on Aug 14 at 7pm <a class="footer-link" href="#">http://hp.io/6012lbtm</a>
-        </p>
-        <div class="footer-social">
-          <img class="footer-social-icon" src="images/twitter.png" width="32" alt="twitter">
-          <img class="footer-social-icon" src="images/facebook.png" width="32" alt="facebook">
-          <img class="footer-social-icon" src="images/linkedin.png" width="32" alt="linkedin">
-          <img class="footer-social-icon" src="images/youtube.png" width="32" alt="youtube">
         </div>
       </div>
-    </div>
-    <div class="w-container">
-      <p class="footer-2-text">HP.com | Email sign-up | Site map | Privacy | Terms of use | HP Cloud Services Legal Documents</p>
-      <p>&copy; 2014 Hewlett-Packard Development Company, L.P.</p>
-    </div>
-  </footer>
+      <div class="w-container">
+        <p class="footer-2-text">HP.com | Email sign-up | Site map | Privacy | Terms of use | HP Cloud Services Legal Documents</p>
+        <p>&copy; 2014 Hewlett-Packard Development Company, L.P.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="mask"></div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
    <script src="js/classie.js"></script>
