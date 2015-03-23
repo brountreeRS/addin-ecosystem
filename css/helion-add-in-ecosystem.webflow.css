@@ -60,7 +60,18 @@ p {
   color: #fff;
   text-align: center;
   text-decoration: none;
+  border:1px solid #737373;
+  border-radius:6px;
 }
+
+.button.ghost {
+ background-color: #fff;
+  color: #0096d6;
+  border-color:#0096d6;
+  text-align: center;
+  text-decoration: none; 
+}
+
 .main {
   margin-top: 60px;
   border: 1px solid #737373;
@@ -656,6 +667,10 @@ a:link {color:#0096d6;text-decoration:none;}
   align-items: flex-start;
   flex:1;
 }
+
+
+.faux-column img {width:24px;}
+
 html.w-mod-js *[data-ix="display-none-on-load"] {
   display: none;
   opacity: 0;
@@ -670,7 +685,7 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
 }
 
 
-.faux-table-row div:nth-child(5), .faux-table-row div:nth-child(6),
+/*.faux-table-row div:nth-child(5), .faux-table-row div:nth-child(6),
 .faux-table-row-header div:nth-child(5), .faux-table-row-header div:nth-child(6) {
   flex: 0 0 16%
 }
@@ -678,7 +693,7 @@ html.w-mod-js *[data-ix="display-none-on-load"] {
 .faux-table-row-header div:nth-child(3), .faux-table-row-header div:nth-child(4), .faux-table-row-header div:nth-child(7) {
   flex: 0 0 6%
 }
-
+*/
 header.flex {
   position:fixed;
   top:0;

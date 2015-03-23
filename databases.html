@@ -129,132 +129,119 @@
           </div>
           <div class="w-tab-content">
             <div class="w-tab-pane" data-w-tab="Tab 1">
-              <a class="w-inline-block button" href="#" data-ix="launch-modal-wizard"><img class="button-icon" src="images/launch-cluster.png" width="30" alt="55033de65f1c768a0cb5c3dc_launch-cluster.png">
+              <a class="w-inline-block button ghost" href="#" data-ix="launch-modal-wizard">
+                <img class="button-icon" src="images/launch-cluster.png" width="30">
                 <div class="button-text">Launch Cluster</div>
               </a>
-              <div class="w-embed tab-table">
-                <table cellspacing="0" summary="clusters">
-                  <tbody>
-                    <tr>
-                      <th>NAME</th>
-                      <th>DATA STORE</th>
-                      <th>VERSION</th>
-                      <th>NODES</th>
-                      <th>SIZE</th>
-                      <th>VOLUME SIZE</th>
-                      <th>STATUS</th>
-                      <th></th>
-                    </tr>
-                    <tr>
-                      <td>DB-Mongo_023</td>
-                      <td>MongoDB</td>
-                      <td>1.0.0</td>
-                      <td>10</td>
-                      <td>m1.medium</td>
-                      <td>24TB</td>
-                      <td>Running</td>
-                      <td>...</td>
-                    </tr>
-                    <tr>
-                      <td>DB_MySQL_015</td>
-                      <td>MongoDB</td>
-                      <td>2.1.0</td>
-                      <td>50</td>
-                      <td>m1.large</td>
-                      <td></td>
-                      <td></td>
-                      <td>...</td>
-                    </tr>
-                    <tr>
-                      <td>DB_MySQL_014</td>
-                      <td>MySQL</td>
-                      <td>4.5.2</td>
-                      <td>32</td>
-                      <td>m1.medium</td>
-                      <td></td>
-                      <td></td>
-                      <td>...</td>
-                    </tr>
-                    <tr>
-                      <td>DB_Mongo_17</td>
-                      <td>MongoDB</td>
-                      <td>2.0.0</td>
-                      <td>125</td>
-                      <td>m1.large</td>
-                      <td></td>
-                      <td></td>
-                      <td>...</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="faux-tables-container">
+                <div class="faux-table">
+                  <div class="faux-table-row-header">
+                    <div class="faux-column">NAME</div>
+                    <div class="faux-column">DATA STORE</div>
+                    <div class="faux-column">VERSION</div>
+                    <div class="faux-column">NODES</div>
+                    <div class="faux-column">SIZE</div>
+                    <div class="faux-column">VOLUME SIZE</div>
+                    <div class="faux-column">STATUS</div>
+                    <div class="faux-column"></div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">DB-Mongo_023</div>
+                    <div class="faux-column">MongoDB</div>
+                    <div class="faux-column">1.0.0</div>
+                    <div class="faux-column">10</div>
+                    <div class="faux-column">m1.medium</div>
+                    <div class="faux-column">24TB</div>
+                    <div class="faux-column"><img class="w-inline-block" src="images/3.png">Running</div>
+                    <div class="faux-column"><a class="w-inline-block" href="#"><img src="images/dots.png"></a></div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">DB_MySQL_015</div>
+                    <div class="faux-column">MongoDB</div>
+                    <div class="faux-column">2.1.0</div>
+                    <div class="faux-column">50</div>
+                    <div class="faux-column">m1.large</div>
+                    <div class="faux-column"></div>
+                    <div class="faux-column"><img class="w-inline-block" src="images/3.png">Running</div>
+                    <div class="faux-column"><a class="w-inline-block" href="#"><img src="images/dots.png"></a></div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">DB_MySQL_014</div>
+                    <div class="faux-column">MySQL</div>
+                    <div class="faux-column">4.5.2</div>
+                    <div class="faux-column">32</div>
+                    <div class="faux-column">m1.medium</div>
+                    <div class="faux-column"></div>
+                    <div class="faux-column"><img class="w-inline-block" src="images/3.png">Running</div>
+                    <div class="faux-column"><a class="w-inline-block" href="#"><img src="images/dots.png"></a></div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">DB_Mongo_17</div>
+                    <div class="faux-column">MongoDB</div>
+                    <div class="faux-column">2.0.0</div>
+                    <div class="faux-column">125</div>
+                    <div class="faux-column">m1.large</div>
+                    <div class="faux-column"></div>
+                    <div class="faux-column"><img class="w-inline-block" src="images/3.png">Running</div>
+                    <div class="faux-column"><a class="w-inline-block" href="#"><img src="images/dots.png"></a></div>
+                  </div>
+                </div>
               </div>
+              
             </div>
             <div class="w-tab-pane w--tab-active" data-w-tab="Tab 2">
-              <a class="w-inline-block button" href="#" data-ix="launch-modal-wizard"><img class="button-icon" src="images/launch-cluster.png" width="30">
-                <div class="button-text">Launch&nbsp;Instance</div>
+              <a class="w-inline-block button ghost" href="#" data-ix="launch-modal-wizard">
+                <img class="button-icon" src="images/launch-cluster.png" width="30">
+                <div class="button-text">Launch Instance</div>
               </a>
-              <div class="w-embed tab-table">
-                <table cellspacing="0" summary="instances">
-                  <tbody>
-                    <tr>
-                      <th>NAME</th>
-                      <th>DATA STORE</th>
-                      <th>VERSION</th>
-                      <th>SIZE</th>
-                      <th>STATUS</th>
-                      <th></th>
-                    </tr>
-                    <tr>
-                      <td>Sales CRM</td>
-                      <td>MySQL</td>
-                      <td>1.2.0</td>
-                      <td>2.10 MB</td>
-                      <td>Active</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Sales CRM Backup</td>
-                      <td>MySQL</td>
-                      <td>1.5.0</td>
-                      <td>10.0 MB</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Skunkworks dev</td>
-                      <td>MongoDB</td>
-                      <td>2.5.0</td>
-                      <td>2.5 GB</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Marketing analytics</td>
-                      <td>MySQL</td>
-                      <td>8.5.0</td>
-                      <td>3.0 MB</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>R&amp;D DB1</td>
-                      <td>MongoDB</td>
-                      <td>1.3.0</td>
-                      <td>2.0 GB</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>R&amp;D DB2</td>
-                      <td>MongoDB</td>
-                      <td>10.1.1</td>
-                      <td>3.0 MB</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+              
+              <div class="faux-tables-container">
+                <div class="faux-table">
+                  <div class="faux-table-row-header">
+                    <div class="faux-column">NAME</div>
+                    <div class="faux-column">DATA STORE</div>
+                    <div class="faux-column">VERSION</div>
+                    <div class="faux-column">SIZE</div>
+                    <div class="faux-column">STATUS</div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">Sales CRM</div>
+                    <div class="faux-column">MySQL</div>
+                    <div class="faux-column">1.2.0</div>
+                    <div class="faux-column">2.10 MB</div>
+                    <div class="faux-column">Active</div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">Sales CRM Backup</div>
+                    <div class="faux-column">MySQL</div>
+                    <div class="faux-column">1.5.0</div>
+                    <div class="faux-column">10.0 MB</div>
+                    <div class="faux-column">Inactive</div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">Skunkworks dev</div>
+                    <div class="faux-column">MongoDB</div>
+                    <div class="faux-column">2.5.0</div>
+                    <div class="faux-column">2.5 GB</div>
+                    <div class="faux-column">Active</div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">Marketing analytics</div>
+                    <div class="faux-column">MySQL</div>
+                    <div class="faux-column">8.5.0</div>
+                    <div class="faux-column">3.0 MB</div>
+                    <div class="faux-column">Active</div>
+                  </div>
+                  <div class="faux-table-row">
+                    <div class="faux-column">R&amp;D DB1</div>
+                    <div class="faux-column">MongoDB</div>
+                    <div class="faux-column">1.3.0</div>
+                    <div class="faux-column">2.0 GB</div>
+                    <div class="faux-column">Active</div>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -307,9 +294,8 @@
       </div>
     </div>
     <div class="w-container">
-      <p class="footer-2-text">HP.com | Email sign-up | Site map | Privacy | Terms of use | HP Cloud Services Legal Documents
-        <br>
-        <br>© 2014 Hewlett-Packard Development Company, L.P.</p>
+      <p class="footer-2-text">HP.com | Email sign-up | Site map | Privacy | Terms of use | HP Cloud Services Legal Documents</p>
+      <p>© 2014 Hewlett-Packard Development Company, L.P.</p>
     </div>
   </footer>
 
@@ -318,13 +304,15 @@
     <div class="launch-cluster-modal">
       <div class="modal-header">
         <h3>Launch Cluster</h3>
-        <a class="w-inline-block close-modal" href="#" data-ix="close-modal-wizard"><img class="close-modal-icon" src="images/1.png" width="48" alt="550342195885f7ec108c9f29_1.png" data-ix="close-modal-wizard">
+        <a class="w-inline-block close-modal" href="#" data-ix="close-modal-wizard">
+          <img class="close-modal-icon" src="images/1.png" width="48" data-ix="close-modal-wizard">
         </a>
       </div>
       <div class="modal-body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
       </div>
-      <div class="modal-footer"><a class="button" href="#">Cancel</a><a class="button" href="#">Next</a>
+      <div class="modal-footer">
+        <a class="button" href="#">Cancel</a><a class="button" href="#">Next</a>
       </div>
     </div>
   </div>
@@ -334,7 +322,7 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
    <script src="js/classie.js"></script>
-<script src="js/nav.js"></script>
+  <script src="js/nav.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
